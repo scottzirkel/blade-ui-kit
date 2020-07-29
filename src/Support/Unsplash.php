@@ -75,7 +75,7 @@ class Unsplash extends Component
         });
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'unsplash';
     }

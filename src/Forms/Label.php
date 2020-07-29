@@ -28,7 +28,7 @@ class Label extends Component
         return Str::ucfirst(str_replace('_', ' ', $this->for));
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'label';
     }

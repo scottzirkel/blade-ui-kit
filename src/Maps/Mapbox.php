@@ -46,7 +46,7 @@ class Mapbox extends Component
         ], $this->options);
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'mapbox';
     }

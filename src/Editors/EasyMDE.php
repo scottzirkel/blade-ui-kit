@@ -19,7 +19,7 @@ class EasyMDE extends Textarea
         return view('blade-ui-kit::components.editors.easy-mde');
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'easy-mde';
     }

@@ -33,7 +33,7 @@ class Textarea extends Component
     /**
      * @internal This method should not be overridden outside the package.
      */
-    public static function componentAlias(): string
+    public static function internalAlias(): string
     {
         return 'textarea';
     }

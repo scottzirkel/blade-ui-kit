@@ -38,7 +38,7 @@ class Alert extends Component
         return session()->has($this->type) && ! empty($this->messages());
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'alert';
     }

@@ -18,7 +18,7 @@ class Email extends Input
         return view('blade-ui-kit::components.forms.inputs.email');
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'email';
     }

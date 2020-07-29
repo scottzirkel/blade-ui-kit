@@ -30,7 +30,7 @@ class Trix extends Component
         return view('blade-ui-kit::components.editors.trix');
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'trix';
     }

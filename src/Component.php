@@ -8,7 +8,7 @@ use Illuminate\View\Component as IlluminateComponent;
 
 abstract class Component extends IlluminateComponent
 {
-    abstract public static function componentAlias(): string;
+    abstract public static function internalAlias(): string;
 
     public static function styles(): array
     {

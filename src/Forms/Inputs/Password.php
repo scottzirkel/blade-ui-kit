@@ -18,7 +18,7 @@ class Password extends Input
         return view('blade-ui-kit::components.forms.inputs.password');
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'password';
     }

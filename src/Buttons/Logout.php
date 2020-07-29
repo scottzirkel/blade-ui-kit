@@ -18,7 +18,7 @@ class Logout extends FormButton
         return view('blade-ui-kit::components.buttons.logout');
     }
 
-    final public static function componentAlias(): string
+    final public static function internalAlias(): string
     {
         return 'logout';
     }
