@@ -37,6 +37,7 @@ final class BladeUIKitServiceProvider extends ServiceProvider
 
             foreach (config('blade-ui-kit.components', []) as $alias => $component) {
                 $blade->component($component, $alias, $prefix);
+                $blade->component($component, 'internal-' . $component::componentAlias(), $prefix);
 
                 foreach ($component::styles() as $style) {
                     BladeUIKit::addStyle($style);

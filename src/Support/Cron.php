@@ -27,4 +27,9 @@ class Cron extends Component
     {
         return CronTranslator::translate($this->schedule);
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'cron';
+    }
 }

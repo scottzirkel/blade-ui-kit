@@ -30,4 +30,9 @@ class DateTime extends Component
     {
         return view('blade-ui-kit::components.date-time.date-time');
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'date-time';
+    }
 }

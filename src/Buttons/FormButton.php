@@ -25,4 +25,12 @@ class FormButton extends Component
     {
         return view('blade-ui-kit::components.buttons.form-button');
     }
+
+    /**
+     * @internal This method should not be overridden outside the package.
+     */
+    public static function componentAlias(): string
+    {
+        return 'form-button';
+    }
 }

@@ -43,6 +43,11 @@ class Pikaday extends Component
         return view('blade-ui-kit::components.date-time.pikaday');
     }
 
+    final public static function componentAlias(): string
+    {
+        return 'pikaday';
+    }
+
     public static function styles(): array
     {
         return [

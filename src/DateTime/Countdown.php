@@ -54,6 +54,11 @@ class Countdown extends Component
         return $this->expires->diff(now());
     }
 
+    final public static function componentAlias(): string
+    {
+        return 'countdown';
+    }
+
     public static function scripts(): array
     {
         return [

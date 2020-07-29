@@ -33,4 +33,12 @@ class Input extends Component
     {
         return view('blade-ui-kit::components.forms.inputs.input');
     }
+
+    /**
+     * @internal This method should not be overridden outside the package.
+     */
+    public static function componentAlias(): string
+    {
+        return 'input';
+    }
 }

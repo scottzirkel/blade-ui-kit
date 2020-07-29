@@ -50,4 +50,9 @@ class Avatar extends Component
 
         return sprintf('https://unavatar.now.sh/%s?%s', $this->search, $query);
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'avatar';
+    }
 }

@@ -33,4 +33,9 @@ class Error extends Component
 
         return $bag->has($this->field) ? $bag->get($this->field) : [];
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'error';
+    }
 }

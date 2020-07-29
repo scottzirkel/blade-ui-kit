@@ -26,4 +26,9 @@ class Html extends Component
     {
         return $this->title ?: (string) config('app.name', 'Laravel');
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'html';
+    }
 }

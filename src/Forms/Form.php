@@ -29,4 +29,12 @@ class Form extends Component
     {
         return view('blade-ui-kit::components.forms.form');
     }
+
+    /**
+     * @internal This method should not be overridden outside the package.
+     */
+    public static function componentAlias(): string
+    {
+        return 'error';
+    }
 }

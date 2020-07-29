@@ -97,4 +97,9 @@ class Markdown extends Component
             })
             ->implode(PHP_EOL);
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'markdown';
+    }
 }

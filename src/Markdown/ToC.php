@@ -39,4 +39,9 @@ class ToC extends Component
                 ];
             });
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'toc';
+    }
 }

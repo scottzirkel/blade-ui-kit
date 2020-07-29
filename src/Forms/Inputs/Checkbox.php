@@ -22,4 +22,9 @@ class Checkbox extends Input
     {
         return view('blade-ui-kit::components.forms.inputs.checkbox');
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'checkbox';
+    }
 }

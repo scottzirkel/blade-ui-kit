@@ -74,4 +74,9 @@ class Unsplash extends Component
             ]))->json()['urls']['raw'];
         });
     }
+
+    final public static function componentAlias(): string
+    {
+        return 'unsplash';
+    }
 }
