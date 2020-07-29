@@ -23,6 +23,7 @@ HTML;
         $expected = <<<HTML
 <form method="POST" action="http://localhost/logout">
     <input type="hidden" name="_token" value="">
+    <input type="hidden" name="_method" value="POST">
     <button type="submit">
     Sign Out </button>
 </form>
@@ -41,6 +42,7 @@ HTML;
         $expected = <<<HTML
 <form method="POST" action="http://example.com">
     <input type="hidden" name="_token" value="">
+    <input type="hidden" name="_method" value="POST">
     <button type="submit" class="text-gray-500">
     Logout </button>
 </form>

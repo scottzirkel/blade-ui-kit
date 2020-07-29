@@ -4,21 +4,14 @@ declare(strict_types=1);
 
 namespace BladeUIKit\Editors;
 
-use BladeUIKit\Component;
+use BladeUIKit\Forms\Inputs\Textarea;
 use Illuminate\Contracts\View\View;
 
-class EasyMDE extends Component
+class EasyMDE extends Textarea
 {
-    /** @var string */
-    public $name;
-
-    /** @var string */
-    public $id;
-
     public function __construct(string $name, string $id = null)
     {
-        $this->name = $name;
-        $this->id = $id ?? $name;
+        parent::__construct($name, $id);
     }
 
     public function render(): View

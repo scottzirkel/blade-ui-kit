@@ -1,7 +1,6 @@
-<input
-    name="{{ $name }}"
+<x-internal-input
+    :name="$name"
     type="checkbox"
-    id="{{ $id }}"
-    {{ $checked ? 'checked' : '' }}
-    {{ $attributes }}
+    :id="$id"
+    {{ $attributes->merge(['checked' => $checked]) }}
 />

@@ -26,7 +26,7 @@ class Input extends Component
         $this->name = $name;
         $this->id = $id ?? $name;
         $this->type = $type;
-        $this->value = old($name, $value);
+        $this->value = ! in_array($type, ['checkbox', 'password']) ? old($name, $value) : '';
     }
 
     public function render(): View

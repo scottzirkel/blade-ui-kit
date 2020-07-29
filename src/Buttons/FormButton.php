@@ -4,21 +4,14 @@ declare(strict_types=1);
 
 namespace BladeUIKit\Buttons;
 
-use BladeUIKit\Component;
+use BladeUIKit\Forms\Form;
 use Illuminate\Contracts\View\View;
 
-class FormButton extends Component
+class FormButton extends Form
 {
-    /** @var string */
-    public $action;
-
-    /** @var string */
-    public $method;
-
     public function __construct(string $action, string $method = 'POST')
     {
-        $this->action = $action;
-        $this->method = strtoupper($method);
+        parent::__construct($action, $method);
     }
 
     public function render(): View

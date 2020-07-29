@@ -1,6 +1,6 @@
-<input
-    name="{{ $name }}"
+<x-internal-input
+    :name="$name"
     type="password"
-    id="{{ $id }}"
+    :id="$id"
     {{ $attributes }}
 />

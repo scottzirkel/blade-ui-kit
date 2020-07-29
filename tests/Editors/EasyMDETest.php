@@ -12,7 +12,7 @@ class EasyMDETest extends ComponentTestCase
     public function the_component_can_be_rendered()
     {
         $expected = <<<HTML
-<textarea x-data x-init="new EasyMDE({ element: \$el })" name="about" id="about"></textarea>
+<textarea name="about" id="about" rows="3" x-data="" x-init="new EasyMDE({ element: \$el })"></textarea>
 HTML;
 
         $this->assertComponentRenders($expected, '<x-easy-mde name="about"/>');
@@ -24,7 +24,7 @@ HTML;
         $this->flashOld(['about' => 'About me text']);
 
         $expected = <<<HTML
-<textarea x-data x-init="new EasyMDE({ element: \$el })" name="about" id="about">About me text</textarea>
+<textarea name="about" id="about" rows="3" x-data="" x-init="new EasyMDE({ element: \$el })">About me text</textarea>
 HTML;
 
         $this->assertComponentRenders($expected, '<x-easy-mde name="about"/>');

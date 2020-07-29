@@ -35,6 +35,6 @@ class Form extends Component
      */
     public static function componentAlias(): string
     {
-        return 'error';
+        return 'form';
     }
 }

@@ -1,8 +1,5 @@
-<form method="POST" action="{{ $action }}">
-    @csrf
-    @method($method)
-
+<x-internal-form :method="$method" :action="$action">
     <button type="submit" {{ $attributes }}>
         {{ $slot }}
     </button>
-</form>
+</x-internal-form>

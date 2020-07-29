@@ -30,7 +30,10 @@ class Textarea extends Component
         return view('blade-ui-kit::components.forms.inputs.textarea');
     }
 
-    final public static function componentAlias(): string
+    /**
+     * @internal This method should not be overridden outside the package.
+     */
+    public static function componentAlias(): string
     {
         return 'textarea';
     }

@@ -6,6 +6,7 @@ namespace Tests;
 
 use BladeUIKit\BladeUIKitServiceProvider;
 use Gajus\Dindent\Indenter;
+use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
 use Orchestra\Testbench\TestCase;
 
 abstract class ComponentTestCase extends TestCase
