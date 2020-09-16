@@ -6,6 +6,7 @@
         hours: '{{ $hours() }}',
         minutes: '{{ $minutes() }}',
         seconds: '{{ $seconds() }}',
+        milliseconds: '{{ $milliseconds }}',
     },
     startCounter: function () {
         let runningCounter = setInterval(() => {
@@ -22,6 +23,7 @@
             this.timer.hours = this.formatCounter(Math.floor((timeDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
             this.timer.minutes = this.formatCounter(Math.floor((timeDistance % (1000 * 60 * 60)) / (1000 * 60)));
             this.timer.seconds = this.formatCounter(Math.floor((timeDistance % (1000 * 60)) / 1000));
+            this.timer.milliseconds = this.formatCounter(Math.floor((timeDistance % (1000 * 100)) / 1000));
         }, 1000);
     },
     formatCounter: function (number) {
@@ -37,6 +39,7 @@
         <span x-text="timer.hours">{{ $hours() }}</span> :
         <span x-text="timer.minutes">{{ $minutes() }}</span> :
         <span x-text="timer.seconds">{{ $seconds() }}</span>
+        <span x-text="timer.milliseconds">{{ $milliseconds() }}</span>
     @else
         {{ $slot }}
     @endif

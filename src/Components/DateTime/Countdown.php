@@ -51,6 +51,11 @@ class Countdown extends BladeComponent
         return sprintf('%02d', $this->difference()->s);
     }
 
+    public function milliseconds(): string
+    {
+        return sprintf('%02d', $this->difference()->f);
+    }
+
     public function difference(): DateInterval
     {
         return $this->expires->diff(now());
