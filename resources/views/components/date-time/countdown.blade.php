@@ -23,7 +23,7 @@
             this.timer.hours = this.formatCounter(Math.floor((timeDistance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
             this.timer.minutes = this.formatCounter(Math.floor((timeDistance % (1000 * 60 * 60)) / (1000 * 60)));
             this.timer.seconds = this.formatCounter(Math.floor((timeDistance % (1000 * 60)) / 1000));
-            this.timer.milliseconds = this.formatCounter(Math.floor((timeDistance % (1000 * 100)) / 1000));
+            this.timer.milliseconds = this.formatCounter(Math.floor((timeDistance % (1000)) / 10));
         }, 1000);
     },
     formatCounter: function (number) {
