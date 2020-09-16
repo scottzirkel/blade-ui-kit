@@ -6,7 +6,7 @@
         hours: '{{ $hours() }}',
         minutes: '{{ $minutes() }}',
         seconds: '{{ $seconds() }}',
-        milliseconds: '{{ $milliseconds }}',
+        milliseconds: '{{ $milliseconds() }}',
     },
     startCounter: function () {
         let runningCounter = setInterval(() => {
